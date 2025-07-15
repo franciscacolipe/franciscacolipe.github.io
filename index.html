@@ -1,48 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Francisca Colipe Gamboa - Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+      background-color: #f4f4f4;
       color: #333;
     }
     header {
-      background-color: #222;
+      background: linear-gradient(to right, #0066cc, #00c6ff);
       color: #fff;
-      padding: 40px;
+      padding: 60px 20px;
       text-align: center;
+      animation: pulse 5s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { background-position: left; }
+      50% { background-position: right; }
+    }
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 10px;
     }
     section {
       padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
     }
-    h1, h2 {
-      color: #111;
+    h2 {
+      color: #0066cc;
+      font-size: 26px;
+      border-bottom: 2px solid #0066cc;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
     }
     .btn {
       background-color: #0066cc;
       color: #fff;
-      padding: 10px 20px;
+      padding: 12px 24px;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 15px;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #eee;
+      padding: 25px;
+      background-color: #e0e0e0;
+      font-size: 14px;
+    }
+    .perfil-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 <body>
   <header>
+    <img class="perfil-img" src="https://i.imgur.com/9YXihh5.jpg" alt="Foto de Francisca">
     <h1>Francisca Colipe Gamboa</h1>
     <p>Estratega en compras públicas | Diplomado en Business Intelligence | Apasionada por el deporte</p>
   </header>
@@ -50,6 +86,17 @@
   <section>
     <h2>Sobre mí</h2>
     <p>Ingeniera Comercial con experiencia en licitaciones públicas, sostenibilidad y transformación digital. Actualmente curso un diplomado en Business Intelligence. Mi propósito es generar impacto positivo mediante la gestión eficiente y estratégica de compras públicas.</p>
+  </section>
+
+  <section>
+    <h2>Servicios de Consultoría</h2>
+    <ul>
+      <li>🔍 Asesoría en procesos de licitación y Compra Ágil</li>
+      <li>📊 Implementación de estrategias con enfoque en sostenibilidad y economía circular</li>
+      <li>📈 Análisis de oportunidades de negocios en Mercado Público</li>
+      <li>🧠 Capacitaciones personalizadas a equipos en procesos de compra estatal</li>
+      <li>🛠 Optimización de procesos y reporting en Power BI</li>
+    </ul>
   </section>
 
   <section>
@@ -81,13 +128,13 @@
 
   <section>
     <h2>Descargar CV</h2>
-    <p><a class="btn" href="CV_FranciscaColipe_Global_2025.docx" download>Descargar CV en Word</a></p>
+    <a class="btn" href="CV_FranciscaColipe_Global_2025.docx" download>Descargar CV en Word</a>
   </section>
 
   <section>
     <h2>Contacto</h2>
     <p>Email: francisca.colipe@usach.cl</p>
-    <p>LinkedIn: [Agrega tu URL actualizada]</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/franciscacolipe" target="_blank">linkedin.com/in/franciscacolipe</a></p>
   </section>
 
   <footer>
